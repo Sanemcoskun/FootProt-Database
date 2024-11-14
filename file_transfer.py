@@ -1,18 +1,18 @@
 import os
 import shutil
 
-# Dosyaların bulunduğu klasör yolu ve taşımak istediğin yeni klasör yolu
-kaynak_klasor = "C:/Users/sanem/Downloads/cFMD_mags/cFMD_mags/cFMD-proteins_prok"  # Buraya kaynak klasör yolunu yaz
-hedef_klasor = "C:/Users/sanem/Downloads/cFMD_mags/cFMD_mags/prok_protein dosyaları"    # Buraya hedef klasör yolunu yaz
+# The folder path where the files are located and the new folder path where you want to move them
+source_folder = "to/path"  # Write the source folder path here
+target_folder = "to/path"    # Write the target folder path here
 
-# Eğer hedef klasör yoksa oluştur
-if not os.path.exists(hedef_klasor):
-    os.makedirs(hedef_klasor)
+# If the target folder does not exist, create it
+if not os.path.exists(target_folder):
+    os.makedirs(target_folder)
 
-# Kaynak klasördeki tüm dosyaları kontrol et
-for dosya in os.listdir(kaynak_klasor):
-    if dosya.endswith(".faa"):  # Sadece .faa uzantılı dosyaları seç
-        tam_yol = os.path.join(kaynak_klasor, dosya)
-        shutil.move(tam_yol, hedef_klasor)  # Dosyayı hedef klasöre taşı
+# Check all files in source folder
+for file in os.listdir(source_folder):
+    if dosya.endswith(".faa"):  # Only select files with .faa extension
+        path = os.path.join(source_folder, file)
+        shutil.move(path, target_folder)  # Move file to target folder
 
-print("FAA dosyaları yeni klasöre taşındı.")
+print("FAA files moved to new folder.")
