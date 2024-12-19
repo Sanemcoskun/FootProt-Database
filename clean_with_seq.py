@@ -2,10 +2,10 @@ import os
 import subprocess
 
 # Base directory path
-base_dir = r"C:/Users/sanem/Downloads/cFMD_mags/cFMD_mags/Categorized_FAA"
+base_dir = r"to/path"
 
 # Full path to SeqKit
-seqkit_path = r"C:/Users/sanem/Downloads/seqkit_windows_amd64.exe/seqkit.exe"
+seqkit_path = r"to/path/seqkit_windows_amd64.exe/seqkit.exe"
 
 # Process combined.faa files in each subdirectory
 for root, dirs, files in os.walk(base_dir):
