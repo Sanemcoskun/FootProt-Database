@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Base directory path
-base_dir = r"C:/Users/sanem/Downloads/cFMD_mags/cFMD_mags/Categorized_FAA"
+base_dir = r"to/path"
 
 # Output directory path
 output_dir = r"to/path"
