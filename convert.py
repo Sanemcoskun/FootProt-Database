@@ -23,5 +23,5 @@ def convert_aa_to_faa(directory):
         print(f"{file} -> {file.replace('.aa', '.faa')} renamed successfully.")
 
 if __name__ == "__main__":
-    directory = r"C:\\Users\\sanem\\Downloads\\cFMD_mags\\cFMD_mags\\cFMD_mags_euk\\AA_FİLES"
+    directory = r"to/path"
     convert_aa_to_faa(directory)
