@@ -1,7 +1,7 @@
 import os
 
 # Specify the directory containing .faa files
-directory = r'C:\Users\sanem\Downloads\cFMD_mags\cFMD_mags\cFMD_mags_prok\FAA_Files'  # Windows path
+directory = r'to/path'  # Windows path
 
 # Iterate through all files in the directory
 for filename in os.listdir(directory):
