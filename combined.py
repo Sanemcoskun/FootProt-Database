@@ -1,7 +1,7 @@
 import os
 
 # Base directory containing categorized folders
-categorized_dir = r"C:\Users\sanem\Downloads\cFMD_mags\cFMD_mags\Categorized_FAA"
+categorized_dir = r"to/path"
 
 # Iterate through each category folder in the base directory
 for category in os.listdir(categorized_dir):
